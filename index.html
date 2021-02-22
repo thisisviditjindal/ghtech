@@ -43,13 +43,18 @@
       });
     });
     </script>
+  <script>
+    function onLoad(){
+      window.location.href = "https://thisisviditjindal.github.io/ghtech/login.html";
+    }
+  </script>
   </head>
   <body id="imgback">
     <header>
       <nav class="navbar navbar-expand navbar-light hapve">
         <div class="container-fluid">
           <a class=" navbar-brand" href="#"><span class="textt fontt">GHTech</span></a>
-          <form class="d-flex" action="login.html" method="post">
+          <form class="d-flex" onsubmit="onLoad()" method="post">
             <button type="submit" class="btn btn-primary btn-sm">Go To Login!</button>
           </form>
         </div>
