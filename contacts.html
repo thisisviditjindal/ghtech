@@ -6,8 +6,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/master.css">
-  <link rel="stylesheet" href="styles/contacts.css">
+  <link rel="stylesheet" href="C:\Users\HP\Desktop\ghtech\css\master.css">
+  <link rel="stylesheet" href="C:\Users\HP\Desktop\ghtech\css\contacts.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style media="screen">
   .headd{
@@ -42,6 +42,44 @@
   a{
     color: #0049b5;
     text-decoration: underline;
+  }
+  @media only screen and (max-width: 729px){
+    .bg-content{
+      width: 80%;
+    }
+    .chip{
+      height: 50px;
+      width: 100%;
+      font-size:13px;
+      padding: 0 20px;
+    }
+  }
+  .contactsList{
+    height:250px;
+    overflow: auto;
+    border-top: 4px solid #153c359c;
+    background-color: #ffffff9c;
+    margin-top: 0.5cm;
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -87,15 +125,15 @@
   <header>
     <nav class="navbar navbar-expand navbar-light hapve">
       <div class="container-fluid">
-        <a class=" navbar-brand" href="index.html"><span class="textt fontt">GHTech</span></a>
+        <a class=" navbar-brand" href="C:\Users\HP\Desktop\ghtech\index.html"><span class="textt fontt">GHTech</span></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="contacts.html"><span class="textt">Contacts</span></a>
+              <a class="nav-link" href="C:\Users\HP\Desktop\ghtech\contacts.html"><span class="textt">Contacts</span></a>
             </li>
           </ul>
         </div>
-        <form class="d-flex" action="login.html" method="post">
+        <form class="d-flex" action="C:\Users\HP\Desktop\ghtech\login.html" method="post">
           <button type="submit" class="btn btn-primary" id="login" disabled>Logged In!</button>
         </form>
       </div>
@@ -108,27 +146,45 @@
     <div class="upContacts">
       <input type="text" placeholder="Search Contacts...">
     </div>
-    <div class="chip" style="display:none">
-    </div>
-    <div class="chip">
-      <img src="styles\assets\avatar_m.png" alt="Person" width="96" height="96">
-      <a href="#">Charles Shane.</a>
-    </div>
-    <div class="chip">
-      <img src="styles\assets\avatar_w.jpg" alt="Person" width="96" height="96">
-      <a href="#">Isla Howard.</a>
-    </div>
-    <div class="chip">
-      <img src="styles\assets\avatar_m.png" alt="Person" width="96" height="96">
-      <a href="#">Thomas Crane.</a>
-    </div>
-    <div class="chip">
-      <img src="styles\assets\avatar_w.jpg" alt="Person" width="96" height="96">
-      <a href="#">Tatiana Mcdowell.</a>
-    </div>
-    <div class="chip">
-      <img src="styles\assets\avatar_m.png" alt="Person" width="96" height="96">
-      <a href="#">Odin Zamora.</a>
+    <div class="contactsList">
+      <div class="chip" style="display:none">
+      </div>
+      <div class="chip">
+        <img src="avatar_m.png" alt="Person" width="96" height="96">
+        <a href="#">Charles Shane.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_w.jpg" alt="Person" width="96" height="96">
+        <a href="#">Isla Howard.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_m.png" alt="Person" width="96" height="96">
+        <a href="#">Thomas Crane.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_w.jpg" alt="Person" width="96" height="96">
+        <a href="#">Tatiana Mcdowell.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_m.png" alt="Person" width="96" height="96">
+        <a href="#">Odin Zamora.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_w.jpg" alt="Person" width="96" height="96">
+        <a href="#">Peter Trump.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_m.png" alt="Person" width="96" height="96">
+        <a href="#">Robert Kevin.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_w.jpg" alt="Person" width="96" height="96">
+        <a href="#">Alan Clinton.</a>
+      </div>
+      <div class="chip">
+        <img src="avatar_m.png" alt="Person" width="96" height="96">
+        <a href="#">Kenn Mark.</a>
+      </div>
     </div>
   </div>
   <footer id="foott">
